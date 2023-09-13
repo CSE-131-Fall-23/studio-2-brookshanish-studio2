@@ -56,11 +56,12 @@ public class Ruin {
 		}
 		double ruinRate = (double)ruins/totalSimulations;
 		System.out.print("Ruin Rate from Simulation: " + ruinRate);
-		double expectedRuin = 0.0
-				if(winChance = 0.5) {
+		double expectedRuin = 0.0;
+				if(winChance == 0.5) {
 					expectedRuin = 1 - (startAmount/winLimit);
 				}else {
-					(((1-winChance)/winChance)^startAmount) - (((1-winChance)/winChance)^winLimit) / 1 - (((1-winChance)/winChance)^winLimit);
+					Math.pow(1-winChance)/winChance),(startAmount) - (((1-winChance)/winChance)^winLimit) / 1 - (((1-winChance)/winChance)^winLimit);
 				}
+
 	}
 }
